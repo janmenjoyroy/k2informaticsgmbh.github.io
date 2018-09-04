@@ -34,15 +34,18 @@ module.exports = {
             'window.jQuery': 'jquery'
         }),
         new HtmlWebpackPlugin({
-            title: pkg.description + ' ' + pkg.version
+            title: pkg.description + ' ' + pkg.version,
+            template: './html/fragments/index.html'
         }),
         new favicon('./assets/images/logo.png')
     ],
     module: {
         rules: [
             {
-                test: /\.(scss)$/,
-                use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+                test: /\.(scss|css)$/,
+                use: ['style-loader', 'css-loader','sass-loader']
+                //test: /\.(scss)$/,
+                // use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
             },
             {
                 test: /\.html$/, loader: 'html-loader',
@@ -53,11 +56,26 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif|svg|ico|mp3|ogg|mp4|webm)$/,
-                loader: 'file-loader', options: { name: 'media/[hash:6].[ext]' }
+                loader: 'file-loader', 
+                options: { 
+                    name: 'assets/images/[name].[ext]'
+                }
             },
             {
                 test: /\.(pdf).*$/,
-                loader: 'file-loader', options: { name: 'docs/[name].[ext]' }
+                loader: 'file-loader', 
+                options: { 
+                    name: 'docs/[name].[ext]'
+                }
+            },
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: { 
+                        outputPath: 'assets/font/'
+                    }
+                }]
             }
         ]
     }

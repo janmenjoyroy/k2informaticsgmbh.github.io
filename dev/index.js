@@ -1,67 +1,72 @@
+/*
+ ******** For Css Part ********
+*/
 import 'bootstrap';
-import './styles/main.scss';
-import { library, dom } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
+import './assets/bootstrap/css/bootstrap.css';
+import './assets/font-awesome/css/font-awesome.min.css';
+import './assets/ionicons/css/ionicons.min.css';
+import './assets/css/style.css';
+
+
+
+/*
+ ******** For JS Part ********
+*/
+import './assets/bootstrap/js/bootstrap.bundle.min.js';
+import './assets/magnific-popup/magnific-popup.min.js';
+import './assets/js/main.js';
+
+//import { library, dom } from '@fortawesome/fontawesome-svg-core';
+//import { fas } from '@fortawesome/free-solid-svg-icons';
 
 // init fontawesome
-library.add(fas);
-dom.watch(); // Kicks off the process of finding <i> tags and replacing with <svg>
+//library.add(fas);
+//dom.watch(); // Kicks off the process of finding <i> tags and replacing with <svg>
+
+
+// Initial Navigo
+var root = null;
+var useHash = false; // Defaults to: false
+var hash = '#!'; // Defaults to: '#'
 
 const
     Navigo = require('navigo'),
-    router = new Navigo(window.location.origin);
+    router = new Navigo(root, useHash, hash);
 
 window.router = router;
 
 var htmlFrags = {
-	index: require("./html/fragments/index.html")
+    // index: require("html-loader!./html/fragments/index.html")
+    index: require("./html/fragments/index.html")
 };
 
-$(function () {
-    //trimHtmlFragments();
+function loadHeader() {
+    let headerElem = '<meta charset="utf-8">';
+    headerElem = `${headerElem} <meta content="width=device-width, initial-scale=1.0" name="viewport">`;
+    headerElem = `${headerElem} <meta content="" name="keywords">`;
+    headerElem = `${headerElem} <meta content="" name="description">`;
+    return headerElem;
+}
 
-	$(document.head).append('<meta name="viewport" content="width=device-width, initial-scale=1">');
-    $(document.body).html(htmlFrags.index);
-    //loadDialogs();
+$(function () {
+	$(document.head).append(loadHeader());
+    //$(document.body).append(htmlFrags.index);
     router
         .on({
-            '*': function () {
+            '/': function () {
                 console.log("home");
-                $('#main').html(htmlFrags.home);
             },
             '/about': function () {
                 console.log("about");
-                open_url_tab("http://some.external.url");
             },
             '/menu1': function () {
                 console.log("home");
-                $('#main').html(htmlFrags.menu1);
             }
         })
         .resolve();
-    router.updatePageLinks();
-    console.log(process.env.NODE_ENV);
+        router.updatePageLinks();
+        console.log(process.env.NODE_ENV);
 });
-
-/*
-function loadHtmlFragments() {
-    console.log("loading html fragments...");
-    htmlFrags.index = $.trim(require("./html/fragments/index.html"));
-    htmlFrags.home = $.trim(require("./html/home.html"));
-
-    // dialogs
-    htmlFrags.dialogs = {};
-    htmlFrags.dialogs.signin = $.trim(require("./html/dialogs/signin.html"));
-}
-
-/*
-function loadDialogs() {
-    console.log("loading dialog fragments...");
-    for (var dlg in htmlFrags.dialogs) {
-        $('#dialogs').append(htmlFrags.dialogs[dlg]);
-    }
-}
-*/
 
 function open_url_tab(url) {
     var win = window.open(url, '_blank');
