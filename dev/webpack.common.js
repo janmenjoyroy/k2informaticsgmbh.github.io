@@ -31,11 +31,14 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
-            'window.jQuery': 'jquery'
+            'window.jQuery': 'jquery',
+            i18next:'i18next',
+            i18nextXHRBackend:'i18next-xhr-backend',
+            jqueryI18next:'jquery-i18next'
         }),
         new HtmlWebpackPlugin({
             title: pkg.description + ' ' + pkg.version,
-            template: './html/fragments/index.html'
+            template: './html/template.html'
         }),
         new favicon('./assets/images/logo.png')
     ],

@@ -1,27 +1,24 @@
-/*
- ******** For Css Part ********
-*/
 import 'bootstrap';
-import './assets/bootstrap/css/bootstrap.css';
-import './assets/font-awesome/css/font-awesome.min.css';
-import './assets/ionicons/css/ionicons.min.css';
-import './assets/css/style.css';
-
-
-
-/*
- ******** For JS Part ********
-*/
-import './assets/bootstrap/js/bootstrap.bundle.min.js';
-import './assets/magnific-popup/magnific-popup.min.js';
+import './styles/main.scss';
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import 'magnific-popup';
 import './assets/js/main.js';
 
-//import { library, dom } from '@fortawesome/fontawesome-svg-core';
-//import { fas } from '@fortawesome/free-solid-svg-icons';
-
 // init fontawesome
-//library.add(fas);
-//dom.watch(); // Kicks off the process of finding <i> tags and replacing with <svg>
+library.add(fas);
+dom.watch(); // Kicks off the process of finding <i> tags and replacing with <svg>
+
+
+// var i18n = require("i18next");
+// var resBundle = require(
+//     "i18next-resource-store-loader!./assets/i18n/index.js"
+// );
+
+// i18n.init({
+//     lng: 'en',
+//     resources: resBundle
+// });
 
 
 // Initial Navigo
@@ -31,13 +28,13 @@ var hash = '#!'; // Defaults to: '#'
 
 const
     Navigo = require('navigo'),
-    router = new Navigo(root, useHash, hash);
+    router = new Navigo(root = null, useHash=false);
 
 window.router = router;
 
 var htmlFrags = {
-    // index: require("html-loader!./html/fragments/index.html")
-    index: require("./html/fragments/index.html")
+    index:    require("./html/fragments/index.html"),
+    services: require("./html/fragments/services.html"),
 };
 
 function loadHeader() {
@@ -48,24 +45,31 @@ function loadHeader() {
     return headerElem;
 }
 
+
 $(function () {
-	$(document.head).append(loadHeader());
-    //$(document.body).append(htmlFrags.index);
+    $(document.head).append(loadHeader());
     router
         .on({
             '/': function () {
-                console.log("home");
+                console.log("Home");
+                $("#main").append(htmlFrags.index);
             },
-            '/about': function () {
-                console.log("about");
+            '/services': function () {
+                console.log("Services");
+                $("#main").append(htmlFrags.services);
             },
-            '/menu1': function () {
-                console.log("home");
+            '/solutions': function () {
+                console.log("solutions");
+                $("#main").append(htmlFrags.index);
+            }
+            ,
+            '/solutions': function () {
+                console.log("solutions");
             }
         })
         .resolve();
-        router.updatePageLinks();
-        console.log(process.env.NODE_ENV);
+    router.updatePageLinks();
+    console.log(process.env.NODE_ENV);
 });
 
 function open_url_tab(url) {

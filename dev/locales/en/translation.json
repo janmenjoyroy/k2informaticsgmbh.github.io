@@ -1,0 +1,24 @@
+{
+   "menu": {
+     "home": "Home",
+     "services": "Services",
+     "solutions": "Solutions",
+     "companies": "Companies",
+     "moreText": "More"
+   },
+   "home": {
+    "headline": "Welcome to K2 Informatics GmbH",
+    "content": "You will find some information about us here. We will be happy to explain you in concrete terms what we can do for you. <a href=''>Call us</a> or send us an <a href=''>email</a>.",
+    "paragraph": "<li><i class='fas fa-angle-double-right'></i>&nbsp;  Wanted: experienced Erlang programmer.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Wanted: experienced Erlang developer.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Knowledge Square.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Building up knowledge.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Gain information.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Process data.</li>",
+    "serviceSmallText": "Quickly and conveniently solved an IT problem...",
+    "solutionSmallText": "The secure handling of data is the basis for any information...",
+    "companiesSmallText":"The market and your business is changing faster and faster..."
+  }
+}
+
+
+              
+              
+              
+              
+              
