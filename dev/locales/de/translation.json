@@ -1,18 +1,25 @@
 {
-   "menu": {
-     "home": "Zuhause",
-     "services": "Dienstleistungen",
-     "solutions": "Lösungen",
-     "companies": "Unternehmen",
-     "moreText": "Mehr"
-   },
-   "home": {
+  "menu": {
+    "home": "Zuhause",
+    "services": "Dienstleistungen",
+    "solutions": "Lösungen",
+    "companies": "Unternehmen",
+    "moreText": "Mehr"
+  },
+  "home": {
     "headline": "Willkommen bei K2 Informatics GmbH",
     "content": "Sie finden hier einige Informationen über uns. Was wir konkret für Sie tun können, erläutern wir Ihnen gerne im persönlichen Gespräch. <a href=''>Rufen Sie uns an</a>, oder senden Sie uns eine <a href=''>Mail.</a>",
     "paragraph": "<li><i class='fas fa-angle-double-right'></i>&nbsp;  Gesucht: erfahrener Erlang-Programmierer.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Wanted: experienced Erlang Developer.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Knowledge Square.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Wissen aufbauen.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Informationen gewinnen.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Daten verarbeiten.</li>",
     "serviceSmallText": "Rasch und bequem ein IT-Problem gelöst haben...",
     "solutionSmallText": "Der sichere Umgang mit Daten ist die Basis für jedes Information...",
-    "companiesSmallText":"Der Markt und Ihr Business wandelt sich immer schneller..."
-    
+    "companiesSmallText": "Der Markt und Ihr Business wandelt sich immer schneller..."
+  },
+  "services": {
+    "headline": "Dienstleistungen",
+    "content": "Then we would like to do our part, either as an advisor or as we implement a solution for you and, if you wish, we can also do it for you.",
+    "paragraph": "<li><i class='fas fa-angle-double-right'></i>&nbsp;  Wanted: experienced Erlang programmer.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Wanted: experienced Erlang developer.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Knowledge Square.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Building up knowledge.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Gain information.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Process data.</li>",
+    "serviceSmallText": "Quickly and conveniently solved an IT problem...",
+    "solutionSmallText": "The secure handling of data is the basis for any information...",
+    "companiesSmallText": "The market and your business is changing faster and faster..."
   }
 }

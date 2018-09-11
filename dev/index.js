@@ -9,18 +9,6 @@ import './assets/js/main.js';
 library.add(fas);
 dom.watch(); // Kicks off the process of finding <i> tags and replacing with <svg>
 
-
-// var i18n = require("i18next");
-// var resBundle = require(
-//     "i18next-resource-store-loader!./assets/i18n/index.js"
-// );
-
-// i18n.init({
-//     lng: 'en',
-//     resources: resBundle
-// });
-
-
 // Initial Navigo
 var root = null;
 var useHash = false; // Defaults to: false
@@ -28,14 +16,18 @@ var hash = '#!'; // Defaults to: '#'
 
 const
     Navigo = require('navigo'),
-    router = new Navigo(root = null, useHash=false);
+    router = new Navigo(root = null, useHash = false);
 
 window.router = router;
 
 var htmlFrags = {
-    index:    require("./html/fragments/index.html"),
+    index: require("./html/fragments/index.html"),
     services: require("./html/fragments/services.html"),
+    solutions: require("./html/fragments/solutions.html"),
+    companies: require("./html/fragments/companies.html")
 };
+
+
 
 function loadHeader() {
     let headerElem = '<meta charset="utf-8">';
@@ -52,19 +44,28 @@ $(function () {
         .on({
             '/': function () {
                 console.log("Home");
-                $("#main").append(htmlFrags.index);
+                $("#main").empty().append(htmlFrags.index);
+                jqueryI18next.init(i18next, $);
+                $('body').localize();
             },
             '/services': function () {
                 console.log("Services");
-                $("#main").append(htmlFrags.services);
+                $("#main").empty().append(htmlFrags.services);
+                jqueryI18next.init(i18next, $);
+                $('body').localize();
             },
             '/solutions': function () {
-                console.log("solutions");
-                $("#main").append(htmlFrags.index);
+                console.log("Solutions");
+                $("#main").empty().append(htmlFrags.solutions);
+                jqueryI18next.init(i18next, $);
+                $('body').localize();
             }
             ,
-            '/solutions': function () {
-                console.log("solutions");
+            '/companies': function () {
+                console.log("Companies");
+                $("#main").empty().append(htmlFrags.companies);
+                jqueryI18next.init(i18next, $);
+                $('body').localize();
             }
         })
         .resolve();
