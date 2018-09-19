@@ -101,6 +101,16 @@ $(document).ready(function ($) {
     window.router.navigate(`/${page}`);
   });
 
+  
+  $("#main").on("click",".description a",function (event) {
+    event.stopPropagation();
+    event.preventDefault();
+    let page = $(this).attr("data-page");
+    window.router.navigate(`/${page}`);
+  });
+
+  
+
 
   // Mobile Navigation
   if ($('#nav-menu-container').length) {

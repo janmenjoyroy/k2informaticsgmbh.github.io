@@ -1,8 +1,13 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
 	background: #fff;
 	color: #666666;
 	font-family: "Open Sans", sans-serif;
 	overflow-x: hidden;
+	margin-bottom: 60px;
   }
   
   a {
@@ -1207,11 +1212,15 @@ body {
   # Footer
   --------------------------------------------------------------*/
   #footer {
-	background: #fff;
-	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-	padding: 30px 0;
-	color: #333;
-	font-size: 14px;
+		background: #fff;
+		box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+		color: #333;
+		font-size: 14px;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 60px;
+		padding: 20px 10px;
   }
   
   #footer .credits {
@@ -1234,4 +1243,7 @@ body {
 	.padding10px {
 		padding-left: 10px;
 	}
+
+
+	
   
