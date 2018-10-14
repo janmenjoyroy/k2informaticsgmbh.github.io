@@ -79,7 +79,14 @@ module.exports = {
                         outputPath: 'assets/font/'
                     }
                 }]
-            }
+            },
+            {
+                test: /\.(json).*$/,
+                loader: 'file-loader', 
+                options: { 
+                    name: 'translations/[name].[ext]'
+                }
+            },
         ]
     }
 };

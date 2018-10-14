@@ -1,0 +1,64 @@
+{
+   "menu": {
+     "home": "Home",
+     "services": "Services",
+     "solutions": "Solutions",
+     "about_us": "About Us",
+     "moreText": "More"
+   },
+   "home": {
+    "headline": "Welcome to K2 Informatics GmbH",
+    "mainContent": "You will find some information about us here. We will be happy to explain you in concrete terms what we can do for you. <a href=''>Call us</a> or send us an <a href=''>email</a>.",
+    "subContents": [
+      "Wanted: experienced Erlang programmer.",
+      "Wanted: experienced Erlang developer.",
+      "Knowledge Square.",
+      "Building up knowledge.",
+      "Gain information.",
+      "Process data."
+   ],
+   "serviceShortText": "Quickly and conveniently solved an IT problem...",
+   "solutionShortText": "The secure handling of data is the basis for any information...",
+   "companiesShortText": "The market and your business is changing faster and faster..."
+  },
+  "services": {
+    "headline": "Services",
+    "content": "Then we would like to do our part, either as an advisor or as we implement a solution for you and, if you wish, we can also do it for you.",
+    "paragraph": "<li><i class='fas fa-angle-double-right'></i>&nbsp;  Wanted: experienced Erlang programmer.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Wanted: experienced Erlang developer.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Knowledge Square.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Building up knowledge.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Gain information.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Process data.</li>",
+    "serviceSmallText": "Quickly and conveniently solved an IT problem...",
+    "solutionSmallText": "The secure handling of data is the basis for any information...",
+    "companiesSmallText":"The market and your business is changing faster and faster..."
+  },
+  "solutions":{
+    "headline": "Solutions"
+  },
+  "about_us":{
+    "headline": "About Us",
+    "mainContent": "K2 Informatics GmbH is an IT service company. We plan and develop software solutions for the automation and optimization of operational processes. One of our strengths is the integration of existing heterogeneous applications into a modern and uniform whole.",
+    "subContents": {
+      "firstRow": {
+         "title":"We want for you ...",
+         "list":[
+           "Create benefit",
+           "Accept Challenges",
+           "Work hard on your project and on us"
+          ]
+      },
+      "secondRow": {
+        "title":"And thereby",
+        "list":[
+          "Honest and friendly with each other",
+          "Have fun at work",
+          "To celebrate success"
+        ]
+      }
+    }
+  }
+}
+
+
+              
+              
+              
+              
+              

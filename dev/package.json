@@ -20,6 +20,7 @@
   "devDependencies": {
     "autoprefixer": "^8.6.5",
     "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.3",
     "css-loader": "^0.28.11",
     "expose-loader": "^0.7.5",
     "favicons-webpack-plugin": "0.0.9",

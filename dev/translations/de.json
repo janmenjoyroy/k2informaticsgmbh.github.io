@@ -1,0 +1,58 @@
+{
+  "menu": {
+    "home": "Zuhause1",
+    "services": "Dienstleistungen",
+    "solutions": "Lösungen",
+    "about_us": "Über uns",
+    "moreText": "Mehr"
+  },
+  "home": {
+    "headline": "Willkommen bei K2 Informatics GmbH",
+    "mainContent": "Sie finden hier einige Informationen über uns. Was wir konkret für Sie tun können, erläutern wir Ihnen gerne im persönlichen Gespräch. <a href=''>Rufen Sie uns an</a>, oder senden Sie uns eine <a href=''>Mail.</a>",
+    "subContents": [
+       "Gesucht: erfahrener Erlang-Programmierer.",
+       "Wanted: experienced Erlang Developer.",
+       "Knowledge Square.",
+       "Wissen aufbauen.",
+       "Informationen gewinnen.",
+       "Daten verarbeiten.",
+       "Daten verarbeiten."
+    ],
+    "serviceShortText": "Rasch und bequem ein IT-Problem gelöst haben...",
+    "solutionShortText": "Der sichere Umgang mit Daten ist die Basis für jedes Information...",
+    "companiesShortText": "Der Markt und Ihr Business wandelt sich immer schneller..."
+  },
+  "services": {
+    "headline": "Dienstleistungen",
+    "content": "Then we would like to do our part, either as an advisor or as we implement a solution for you and, if you wish, we can also do it for you.",
+    "paragraph": "<li><i class='fas fa-angle-double-right'></i>&nbsp;  Wanted: experienced Erlang programmer.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Wanted: experienced Erlang developer.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Knowledge Square.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Building up knowledge.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Gain information.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Process data.</li>",
+    "serviceSmallText": "Quickly and conveniently solved an IT problem...",
+    "solutionSmallText": "The secure handling of data is the basis for any information...",
+    "companiesSmallText": "The market and your business is changing faster and faster..."
+  },
+  "solutions":{
+    "headline": "Lösungen"
+  },
+  "about_us":{
+    "headline": "About Us",
+    "mainContent": "K2 Informatics GmbH ist ein IT-Dienstleistungsunternehmen. Wir planen und entwickeln Software-Lösungen zur Automatisierung und Optimierung betrieblicher Abläufe. Eine unserer Stärken ist die Integration von bestehenden heterogenen Applikationen zu einem modernen und einheitlichen Ganzen.",
+    "subContents": {
+      "firstRow": {
+         "title":"Wir möchten für Sie...",
+         "list":[
+           "Nutzen schaffen",
+          "Herausforderungen annehmen",
+          "Hart an Ihrem Projekt und an uns arbeiten"
+        ]
+      },
+      "secondRow": {
+        "title":"Wir möchten für Sie...",
+        "list":[
+          "Ehrlich und freundschaftlich miteinander",
+          "Spass an der Arbeit haben",
+          "Erfolge feiern"
+        ]
+      }
+    }
+  }
+}

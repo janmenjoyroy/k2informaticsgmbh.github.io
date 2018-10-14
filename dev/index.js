@@ -16,7 +16,7 @@ var hash = '#!'; // Defaults to: '#'
 
 const
     Navigo = require('navigo'),
-    router = new Navigo(root = null, useHash = false);
+    router = new Navigo(root = null, useHash = true);
 
 window.router = router;
 
@@ -24,7 +24,7 @@ var htmlFrags = {
     index: require("./html/fragments/index.html"),
     services: require("./html/fragments/services.html"),
     solutions: require("./html/fragments/solutions.html"),
-    companies: require("./html/fragments/companies.html")
+    about_us: require("./html/fragments/about_us.html")
 };
 
 
@@ -61,9 +61,9 @@ $(function () {
                 $('body').localize();
             }
             ,
-            '/companies': function () {
+            '/about_us': function () {
                 console.log("Companies");
-                $("#main").empty().append(htmlFrags.companies);
+                $("#main").empty().append(htmlFrags.about_us);
                 jqueryI18next.init(i18next, $);
                 $('body').localize();
             }
