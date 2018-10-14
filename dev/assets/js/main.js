@@ -32,6 +32,7 @@ $(document).ready(function ($) {
     event.preventDefault();
     let page = $(this).attr("data-page");
     window.router.navigate(`/${page}`);
+    window.scrollTo(0,0);
   });
 
   $(".footer-links a").on("click", function (event) {
@@ -39,6 +40,7 @@ $(document).ready(function ($) {
     event.preventDefault();
     let page = $(this).attr("data-page");
     window.router.navigate(`/${page}`);
+    window.scrollTo(0,0);
   });
 
 
@@ -48,6 +50,7 @@ $(document).ready(function ($) {
     event.preventDefault();
     let page = $(this).attr("data-page");
     window.router.navigate(`/${page}`);
+    window.scrollTo(0,0);
   });
 
   

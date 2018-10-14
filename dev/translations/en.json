@@ -1,12 +1,12 @@
 {
-   "menu": {
-     "home": "Home",
-     "services": "Services",
-     "solutions": "Solutions",
-     "about_us": "About Us",
-     "moreText": "More"
-   },
-   "home": {
+  "menu": {
+    "home": "Home",
+    "services": "Services",
+    "solutions": "Solutions",
+    "about_us": "About Us",
+    "moreText": "More"
+  },
+  "home": {
     "headline": "Welcome to K2 Informatics GmbH",
     "mainContent": "You will find some information about us here. We will be happy to explain you in concrete terms what we can do for you. <a href=''>Call us</a> or send us an <a href=''>email</a>.",
     "subContents": [
@@ -16,37 +16,103 @@
       "Building up knowledge.",
       "Gain information.",
       "Process data."
-   ],
-   "serviceShortText": "Quickly and conveniently solved an IT problem...",
-   "solutionShortText": "The secure handling of data is the basis for any information...",
-   "companiesShortText": "The market and your business is changing faster and faster..."
+    ],
+    "serviceShortText": "Quickly and conveniently solved an IT problem...",
+    "solutionShortText": "The secure handling of data is the basis for any information...",
+    "companiesShortText": "The market and your business is changing faster and faster..."
   },
   "services": {
     "headline": "Services",
-    "content": "Then we would like to do our part, either as an advisor or as we implement a solution for you and, if you wish, we can also do it for you.",
-    "paragraph": "<li><i class='fas fa-angle-double-right'></i>&nbsp;  Wanted: experienced Erlang programmer.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Wanted: experienced Erlang developer.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Knowledge Square.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Building up knowledge.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Gain information.</li><li><i class='fas fa-angle-double-right'></i>&nbsp;  Process data.</li>",
-    "serviceSmallText": "Quickly and conveniently solved an IT problem...",
-    "solutionSmallText": "The secure handling of data is the basis for any information...",
-    "companiesSmallText":"The market and your business is changing faster and faster..."
+    "mainContent": "Then we would like to do our part, either as an advisor or as we implement a solution for you and, if you wish, we can also do it for you.",
+    "subContents": {
+      "firstRow": {
+        "title": "You want...",
+        "list": [
+          "Quickly and conveniently an IT problem",
+          "Expand or renew your information system",
+          "Consolidate your operational knowledge and gain an overview"
+        ]
+      },
+      "secondRow": {
+        "title": "And thereby..",
+        "list": [
+          "Protect and continue to use your previous investments",
+          "Optimize time-to-market",
+          "Increase the productivity of your processes",
+          "Improve the transparency of the system",
+          "Maintain continuity and proceed step by step"
+        ]
+      },
+      "thirdRow": {
+        "title": "Consultation",
+        "content":"We bring theoretical foundations and ways of working into our projects, but put a lot of emphasis on experience (yours and ours), proportionality, common sense, your own competence and teamwork.",
+        "list": [
+          "We offer the following consulting services:",
+          "Advice on IT issues related to own and third party products",
+          "Advice on technical, organizational and work-psychological issues",
+          "Trouble-Shooting",
+          "Process Engineering",
+          "Development of requirement profiles, IT concepts and strategies",
+          "Development of implementation strategies",
+          "Create test concepts and conduct tests on your behalf",
+          "Management of computer science projects",
+          "Conception of communication, information and knowledge platforms"
+        ]
+      },
+      "fourthRow": {
+        "title": "Engineering und Entwicklung",
+        "content":"Wir realisieren IT-Projekte zu fixen Preisen und Terminen, als Generalunternehmer oder als Komponenten-Lieferant.",
+        "list": [
+          "Realisierung von Integrationsprojekten",
+          "Schnittstellen zwischen bestehenden Applikationen",
+          "Wrapping von bestehenden Applikationen",
+          "Re-Engineering von bestehenden Applikationen",
+          "Konzeption und Realisierung von neuen Applikationen",
+          "Realisierung von Informationsplattformen",
+          "Datenbank-Design / Data Warehousing",
+          "Data Mining / Reporting",
+          "Informations-Verteilung",
+          "Dokumenten-Verwaltung",
+          "Aufbau von Wissensplattformen",
+          "massgeschneiderte Wissensmodelle",
+          "interaktive Wissens-Erfassung",
+          "Wissens-Präsentation"
+        ]
+      },
+      "fifthRow": {
+        "title": "Unsere aktive Unterstützung bei Ihnen im Betrieb",
+        "content":"Wir arbeiten gerne in Ihrem Betrieb mit",
+        "list": [
+          "bei der Betreuung Ihrer IT-Systeme",
+          "bei der Bereitstellung von Informationen",
+          "bei der Formalisierung und Verteilung von Wissen",
+          "Mitarbeit beim Betrieb von Applikationen oder Teilen davon",
+          "während der Einführung einer neuen Lösung",
+          "zur Überbrückung von Spitzenlast-Zeiten",
+          "als nicht befristete Dienstleistung",
+          "Diese Art von Support erlaubt uns eine vertiefte Einsicht in Ihre Prozesse und hilft uns bei der Ortung von verborgenen Informations- und Wissens-Schätzen. Wir kombinieren diese Dienstleistungen auch mit Training-on-the-job und erzielen damit einen wirklich praxisrelevanten Know-How-Transfer in beide Richtungen."
+        ]
+      }
+    }
   },
-  "solutions":{
+  "solutions": {
     "headline": "Solutions"
   },
-  "about_us":{
+  "about_us": {
     "headline": "About Us",
     "mainContent": "K2 Informatics GmbH is an IT service company. We plan and develop software solutions for the automation and optimization of operational processes. One of our strengths is the integration of existing heterogeneous applications into a modern and uniform whole.",
     "subContents": {
       "firstRow": {
-         "title":"We want for you ...",
-         "list":[
-           "Create benefit",
-           "Accept Challenges",
-           "Work hard on your project and on us"
-          ]
+        "title": "We want for you ...",
+        "list": [
+          "Create benefit",
+          "Accept Challenges",
+          "Work hard on your project and on us"
+        ]
       },
       "secondRow": {
-        "title":"And thereby",
-        "list":[
+        "title": "And thereby",
+        "list": [
           "Honest and friendly with each other",
           "Have fun at work",
           "To celebrate success"
@@ -55,10 +121,3 @@
     }
   }
 }
-
-
-              
-              
-              
-              
-              

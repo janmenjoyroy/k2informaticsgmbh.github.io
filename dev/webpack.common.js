@@ -38,9 +38,11 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             title: pkg.description + ' ' + pkg.version,
-            template: './html/template.html'
+            template: './html/template.html',
+            favicon:'./assets/images/logo.png',
+            inject:'head'
         }),
-        new favicon('./assets/images/logo.png')
+        // new favicon('./assets/images/logo.png')
     ],
     module: {
         rules: [
