@@ -5,6 +5,9 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import 'magnific-popup';
 import './assets/js/main.js';
 
+/* For Language */
+window.lang = "en";
+
 // init fontawesome
 library.add(fas);
 dom.watch(); // Kicks off the process of finding <i> tags and replacing with <svg>
@@ -45,25 +48,41 @@ $(function () {
             '/': function () {
                 console.log("Home");
                 $("#main").empty().append(htmlFrags.index);
+                i18next.changeLanguage(window.lang);
                 jqueryI18next.init(i18next, $);
                 $('body').localize();
             },
-            '/services': function () {
+            '/:lang?/home': function (prams) {
+                console.log(prams);
+                window.lang = prams.lang;
+                console.log("Home");
+                $("#main").empty().append(htmlFrags.index);
+                i18next.changeLanguage(window.lang);
+                jqueryI18next.init(i18next, $);
+                $('body').localize();
+            },
+            '/:lang?/services': function (prams) {
+                window.lang = prams.lang;
                 console.log("Services");
                 $("#main").empty().append(htmlFrags.services);
+                i18next.changeLanguage(window.lang);
                 jqueryI18next.init(i18next, $);
                 $('body').localize();
             },
-            '/solutions': function () {
+            '/:lang?/solutions': function (prams) {
+                window.lang = prams.lang;
                 console.log("Solutions");
                 $("#main").empty().append(htmlFrags.solutions);
+                i18next.changeLanguage(window.lang);
                 jqueryI18next.init(i18next, $);
                 $('body').localize();
             }
             ,
-            '/about_us': function () {
+            '/:lang?/about_us': function (prams) {
+                window.lang = prams.lang;
                 console.log("Companies");
                 $("#main").empty().append(htmlFrags.about_us);
+                i18next.changeLanguage(window.lang);
                 jqueryI18next.init(i18next, $);
                 $('body').localize();
             }

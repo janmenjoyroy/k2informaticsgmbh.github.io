@@ -1,12 +1,10 @@
 
 $(document).ready(function ($) {
-
   // i18next for multilingual
   i18next.use(i18nextXHRBackend);
   i18next.init({
     'debug': true,
-    'lng': 'en',
-    'fallbackLng': 'en',
+    'fallbackLng': window.lang,
     backend: {
       loadPath: 'translations/{{lng}}.json'
     }
@@ -14,16 +12,22 @@ $(document).ready(function ($) {
     jqueryI18next.init(i18next, $);
     $('body').localize();
   });
-  
+
   $(".lang").on("click", function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    let lang = $(this).attr("data-lang");
-    i18next.changeLanguage(lang);
+      event.stopPropagation();
+      event.preventDefault();
+      window.lang = $(this).attr("data-lang");
+      i18next.changeLanguage(window.lang);
+      let url = window.location.href;
+      url = url.split("/").pop();
+      console.log("url:", url);
+      router.pause();
+      router.navigate(`/${lang}/${url}`);
+      router.resume();
   });
   i18next.on('languageChanged', () => {
-    jqueryI18next.init(i18next, $);
-    $('body').localize();
+      jqueryI18next.init(i18next, $);
+      $('body').localize();
   });
 
   // change navigate router
@@ -31,29 +35,29 @@ $(document).ready(function ($) {
     event.stopPropagation();
     event.preventDefault();
     let page = $(this).attr("data-page");
-    window.router.navigate(`/${page}`);
-    window.scrollTo(0,0);
+    window.router.navigate(`/${window.lang}/${page}`);
+    window.scrollTo(0, 0);
   });
 
   $(".footer-links a").on("click", function (event) {
     event.stopPropagation();
     event.preventDefault();
     let page = $(this).attr("data-page");
-    window.router.navigate(`/${page}`);
-    window.scrollTo(0,0);
+    window.router.navigate(`/${window.lang}/${page}`);
+    window.scrollTo(0, 0);
   });
 
 
-  
-  $("#main").on("click",".description a",function (event) {
+
+  $("#main").on("click", ".description a", function (event) {
     event.stopPropagation();
     event.preventDefault();
     let page = $(this).attr("data-page");
-    window.router.navigate(`/${page}`);
-    window.scrollTo(0,0);
+    window.router.navigate(`/${window.lang}/${page}`);
+    window.scrollTo(0, 0);
   });
 
-  
+
 
 
   // Mobile Navigation
