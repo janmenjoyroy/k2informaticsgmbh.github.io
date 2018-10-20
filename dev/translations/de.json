@@ -101,24 +101,233 @@
   },
   "about_us": {
     "headline": "About Us",
-    "mainContent": "K2 Informatics GmbH ist ein IT-Dienstleistungsunternehmen. Wir planen und entwickeln Software-Lösungen zur Automatisierung und Optimierung betrieblicher Abläufe. Eine unserer Stärken ist die Integration von bestehenden heterogenen Applikationen zu einem modernen und einheitlichen Ganzen.",
+    "mainContent": "K2 Informatics GmbH is an IT service company. We plan and develop software solutions for the automation and optimization of operational processes. One of our strengths is the integration of existing heterogeneous applications into a modern and uniform whole.",
     "subContents": {
       "firstRow": {
-        "title": "Wir möchten für Sie...",
+        "title": "We want for you ...",
         "list": [
-          "Nutzen schaffen",
-          "Herausforderungen annehmen",
-          "Hart an Ihrem Projekt und an uns arbeiten"
+          "Create benefit",
+          "Accept Challenges",
+          "Work hard on your project and on us"
         ]
       },
       "secondRow": {
-        "title": "Wir möchten für Sie...",
+        "title": "And thereby",
         "list": [
-          "Ehrlich und freundschaftlich miteinander",
-          "Spass an der Arbeit haben",
-          "Erfolge feiern"
+          "Honest and friendly with each other",
+          "Have fun at work",
+          "To celebrate success"
         ]
       }
+    },
+    "vision": {
+      "headline": "Vision",
+      "contents": [
+        "Sie - als Kunde - haben hohe Anforderungen an Ihre Informatiklösungen:",
+        [
+          "Investitions-Schutz",
+          "Time-To-Market",
+          "Produktivität",
+          "Transparenz",
+          "Kontinuität"
+        ],
+        "Der Markt und Ihr Business wandelt sich immer schneller.",
+        "Nur in seltenen Fällen können Standard-EDV-Systeme diejenigen Anforderungen abdecken, welche das Spezielle Ihres Produkts oder Ihres Angebots ausmachen. Die Integration von Teil-Lösungen zu einem sinnvollen Ganzen wird - allein schon aus Gründen des Investitionsschutzes - zu einem zentralen Thema.",
+        "Eine übergeordnete Betrachtungsweise und eine Drehscheibe für betriebliche Informationen inkl. EDV-Wissen kann folgendes bewirken:",
+        [
+          "die Mitarbeiter finden sich im EDV-Dschungel besser zurecht",
+          "sie kommen wieder schnell genug an die benötigten Informationen heran",
+          "die Komplexität der gesamten Prozesse wird - wo sinnvoll - versteckt",
+          "dauernde Veränderung hinter den Kulissen wird beherrschbar",
+          "Know-How bleibt von Personen unabhängig bestehen"
+        ],
+        "Wir unterstützen Sie beim Aufbau und Betrieb einer individualisierten Wissens-Drehscheibe für Ihr Unternehmen und nennen diese Knowledge Square."
+      ]
+    },
+    "teams": {
+      "headline": "Team/Partner",
+      "list": [
+        {
+          "image": "portrait_0.jpg",
+          "name": "Stefan Ochsenbein",
+          "type": "Portrait",
+          "content": "<b>Portrait</b> <br/> Stefan Ochsenbein <br/> Dr. sc. nat.; Dipl. Physiker ETH; <br/> eMail: <a href='mailto:ochsenbein@bluewin.ch'>ochsenbein@bluewin.ch</a> <br/> Physikstudium an der ETH Zürich <br/>Dissertation am Paul Scherrer Institut in Villigen / ETH Zürich,<br/>Gründungsmitglied und VR mls Laser Systems Schweiz AG in Cham<br/>Entwicklungsleiter Verbrennungstechnik Satronic AG, Dielsdorf<br/>Informatik-Entwicklungsleiter ARCO-Data AG, Zug<br/>Gründer und Geschäftsführer K2 Informatics GmbH, Root D4<br/><br/>Um mehr über unsere Mitarbeiter und Partner zu erfahren, clicken Sie bitte auf die untenstehenden Vorschaubilder"
+        },
+        {
+          "image": "portrait_1.jpg",
+          "name": "Bikram Chatterjee",
+          "type": "Portrait",
+          "content": "<b>Portrait</b><br/>Bikram Chatterjee<br/>B. Tech in Computer Science and Engineering<br/>eMail: <a href='mailto:bikram.chatterjee@k2informatics.ch'>bikram.chatterjee@k2informatics.ch</a><br/>Bachelor of Technology in Computer Science from Kalyani University, Kolkata, India<br/>Telecom Projects, Embedded Computing, Mobile Applications<br/>Software-Development and Projekt-Management, K2 Informatics GmbH, Root Längenbold"
+        },
+        {
+          "image": "portrait_2.jpg",
+          "name": "Agustin Cautin",
+          "type": "Portrait",
+          "content": "Licenciado en Ciencias de la Ingeniería Informática UTFSM, Valparaíso, Chile <br/> Enthusiast about a wide range of areas in computer science, from backend development to 3d game engines <br/> Software-Development and Projekt-Management, K2 Informatics GmbH, Root Längenbold"
+        },
+        {
+          "image": "portrait_3.jpg",
+          "name": "Franz Philippe Wyss",
+          "type": "Portrait",
+          "content": "<b>Portrait</b><br/>Franz Philippe Wyss<br/>Dr. sc. nat.; Dipl. Natw. ETH;<br/>eMail: <a href='mailto:info@lernpark.ch'>info@lernpark.ch</a><br/>Studium der Naturwissenschaften an der ETH Zürich<br/>Verhaltensbiologie, Wahrnehmung, Physiologie und experimenteller Psychologie<br/>Dissertation in Zellbiologie an der ETH Zürich<br/>Erfahrung und Führungsfunktion in Unternehmens- & Konzernentwicklung, Umwelt- und Projektmanagement<br/>Gründer und Geschäftsführer <a href=''>lernpark.ch</a>, Zofingen<br/>Weiterbildungen in Controlling, Didaktik, Kommunikation, Marketing, Moderation, Pädagogik, Systemischer Organisationsberatung, Total Quality Management, Mediation, Transaktionsanalyse, Systemischer Organisationsberatung,Total Quality Management, Mediation, Transaktionsanalyse,TZI."
+        },
+        {
+          "image": "portrait_4.jpg",
+          "name": "Erlio GmbH",
+          "type": "",
+          "content": "<b>Erlio GmbH</b><br/>Laufenstrasse 9 CH-4053 Basel <a href='mailto:info@erl.io'>info@erl.io</a><br/><a href='http://www.erl.io'>http://www.erl.io</a><br/>Unser Partner mit speziellen Kompetenzen in folgenden Bereichen:<br/>Erlang, Consulting, Development, Software Engineering<br/>Web-Kommunikation"
+        },
+        {
+          "image": "portrait_5.jpg",
+          "name": "Manfred Jehle",
+          "type": "Portrait",
+          "content": "<b>Portrait</b><br/>Manfred Jehle<br/>eMail: <a href='mailto:info@cetris.ch'>info@cetris.ch</a>Lehrlings-Ausbildner bei Landis&Gyr, Zug<br/>Chefexperte Informatik im Auftrag von Amt für Berufsbildung, Zug<br/>Software-Entwicklung bei ARCO-Data AG, Zug<br/>Gründer und Geschäftsführer CeTris GmbH, Zug"
+        },
+        {
+          "image": "portrait_6.jpg",
+          "name": "Susanne Müller",
+          "type": "Portrait",
+          "content": ""
+        },
+        {
+          "image": "portrait_7.jpg",
+          "name": "Erna Villiger",
+          "type": "Portrait",
+          "content": ""
+        },
+        {
+          "image": "portrait_8.jpg",
+          "name": "Guido Hollenstein",
+          "type": "Portrait",
+          "content": ""
+        },
+        {
+          "image": "portrait_9.jpg",
+          "name": "Edouard Laederach",
+          "type": "Portrait",
+          "content": ""
+        },
+        {
+          "image": "portrait_10.jpg",
+          "name": "Bruno Schuler",
+          "type": "Portrait",
+          "content": ""
+        },
+        {
+          "image": "portrait_11.jpg",
+          "name": "lernpark.ch",
+          "type": "",
+          "content": ""
+        },
+        {
+          "image": "portrait_12.jpg",
+          "name": "CeTris GmbH",
+          "type": "",
+          "content": ""
+        },
+        {
+          "image": "portrait_13.jpg",
+          "name": "Holimatic GmbH",
+          "type": "",
+          "content": ""
+        },
+        {
+          "image": "portrait_14.jpg",
+          "name": "Laederach&Schuler",
+          "type": "Portrait",
+          "content": ""
+        }
+      ]
+    },
+    "contact": {
+      "headline": "Contact",
+      "contents": [
+        {
+          "key": "<b>Your contact:</b>",
+          "value": "Stefan Ochsenbein(Managing Director)"
+        },
+        {
+          "key": "<b>Address:</b>",
+          "value": "<b>K2 Informatics GmbH</b><br/>5th place CH-6039 Root D4"
+        },
+        {
+          "key": "<b>Tel:</b>",
+          "value": "079 432 17 50"
+        },
+        {
+          "key": "<b>Mobile:</b>",
+          "value": "079 432 17 50"
+        },
+        {
+          "key": "<b>eMail:</b>",
+          "value": "office@k2informatics.ch"
+        },
+        {
+          "key": "<b>Map:</b>",
+          "value": "<a href=''>Access D4 Technopark Root</a>"
+        },
+        {
+          "key": "<b>VAT Number:</b>",
+          "value": "623667"
+        },
+        {
+          "key": "<b>Commercial Register Number:</b>",
+          "value": "CH-170.4.005.745-8"
+        }
+      ]
+    },
+    "map": {
+      "headline": "Map"
+    },
+    "support": {
+      "headline": "Support",
+      "contents": [
+        "<b>Support page for our customers</b>",
+        "You must authenticate yourself to use our support services.",
+        "Request <a href=''>Here</a> a user ID and a password.",
+        "If you already have a password, go to the <a href=''>support menu</a>"
+      ]
+    },
+    "jobs": {
+      "headline": "Jobs",
+      "contents": [
+        "Offene Stellen bei K2 Informatics:",
+        "Erlang/OTP Developer 80-100%",
+        "Sind Sie ein erfahrener Software-Entwickler und suchen eine herausfordernde Tätigkeit als Erlang-Developer/Generalist?",
+        "Wir entwickeln Software-Systeme zur Steuerung von Telekommunikationsdiensten im Mesaging-Bereich und haben in diesem Umfeld eine interessante, vielseitige und entwicklungsfähige Position zu besetzen.",
+        "<b>In dieser erfüllen Sie als neues Team-Mitglied vielleicht schon bald folgende Aufgaben:<b>",
+        [
+          "Requirements-Engineering in Zusammenarbeit mit dem Kunden",
+          "Solution-Design, Spezifikation",
+          "Interne Projektleitung",
+          "Realisation/Programmierung",
+          "Planung und Durchführung von Tests und Inbetriebnahmen"
+        ],
+        "Je nach Projektumfang realisieren Sie die Lösungen selbständig oder zusammen mit internen oder externen Partnern.",
+        "<b>Was Sie mitbringen:</b>",
+        [
+          "Abgeschlossene Informatik-Ausbildung (B.S, M.S., ETH, Uni, FH, HTL)",
+          "Erfahrung in der Realisierung von Software-Projekten",
+          "Branchenkenntnisse, vorzugsweise im Messaging- / Telecom- oder Bankenumfeld",
+          "Ausgeprägte analytische Fähigkeiten",
+          "Geschick im Umgang mit anspruchsvollen Kunden",
+          "Teamfähigkeit und Selbständigeit",
+          "Dienstleistungs-orientiertes Denken und Handeln",
+          "Gute Englischkenntnisse, Basiskenntnisse Deutsch, Französisch willkommen",
+          "Erfahrung in Erlang/OTP, wenn möglich in Telecom-ähnlichem Umfeld",
+          "Gewandtheit in weiteren Programmiersprachen, z.B. Python, JavaScript, JQuery ...",
+          "Gute Kenntnisse in Datenbank-Programmierung unter Anwendung von SQL- und NoSql-Konzepten"
+        ],
+        "<b>Wir offerieren:</b>",
+        [
+          "Eine Möglichkeit, unsere Neuentwicklungen aktiv mitzugestalten",
+          "Anspruchsvolle Aufgaben, bei welchen Sie Ihre Eigeninitiative und Kreativität einsetzen können",
+          "Überdurchschnittliches, erfolgsabhängiges Salär",
+          "Flexible Freizeit- und Urlaubsregelungen",
+          "Angenehmes und motivierendes Arbeitsklima im kleinen Team"
+        ],
+        "Wir freuen uns auf Ihre Bewerbung. Senden sie diese bitte per eMail an: <a href='mailto:k2informatics@bluewin.ch'>k2informatics@bluewin.ch</a>"
+      ]
     }
   }
 }

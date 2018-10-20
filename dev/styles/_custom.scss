@@ -490,7 +490,14 @@ body {
 	color: #111;
 	text-align: center;
 	font-weight: 400;
-  }
+	}
+	
+	.section-header .section-title2 {
+		font-size: 22px;
+		color: #111;
+		text-align: center;
+		font-weight: 400;
+		}
   
   .section-header .section-description {
 	text-align: center;
@@ -517,37 +524,37 @@ body {
   
   /* About Us Section
   --------------------------------*/
-  #about {
+  #about,#about2 {
 	margin-top: 50px;
 	padding: 60px 0px 0px 0px;
 	overflow: hidden;
   }
   
-  #about .about-img {
+  #about .about-img,#about2 .about-img{
 	overflow: hidden;
   }
   
-  #about .about-img img {
+  #about .about-img img,#about2 .about-img img {
 	max-width: 100%;
   }
   
   @media (max-width: 768px) {
-	#about .about-img {
+	#about .about-img,#about2 .about-img {
 	  height: auto;
 	}
-	#about .about-img img {
+	#about .about-img img,#about2 .about-img img {
 	  margin-left: 0;
 	  padding-bottom: 30px;
 	}
   }
   
-  #about .content .h2 {
+  #about .content .h2,#about2 .content .h2 {
 	color: #333;
 	font-weight: 300;
 	font-size: 24px;
   }
   
-  #about .content h3 {
+  #about .content h3,#about2 .content .h3  {
 	color: #777;
 	font-weight: 300;
 	font-size: 18px;
@@ -555,29 +562,29 @@ body {
 	font-style: italic;
   }
   
-  #about .content p {
+  #about .content p,#about2 .content p {
 	line-height: 26px;
   }
   
-  #about .content p:last-child {
+  #about .content p:last-child, #about2 .content p:last-child  {
 	margin-bottom: 0;
   }
   
-  #about .content i {
+  #about .content i,  #about2 .content i {
 	font-size: 20px;
 	padding-right: 4px;
 	color: #c33c3e;
   }
   
-  #about .content ul {
+  #about .content ul,  #about2 .content ul {
 	list-style: none;
 	padding: 0;
   }
   
-  #about .content ul li {
+  #about .content ul li,#about2 .content ul li {
 	  padding-bottom: 10px;
 	}
-	#about .content svg {
+	#about .content svg,	#about2 .content svg {
 	  color:#CB3837
   }
   

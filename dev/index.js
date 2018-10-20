@@ -4,6 +4,7 @@ import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import 'magnific-popup';
 import './assets/js/main.js';
+import './assets/js/about_us.js';
 
 /* For Language */
 window.lang = "en";
@@ -82,6 +83,7 @@ $(function () {
                 window.lang = prams.lang;
                 console.log("Companies");
                 $("#main").empty().append(htmlFrags.about_us);
+                initAboutUs();
                 i18next.changeLanguage(window.lang);
                 jqueryI18next.init(i18next, $);
                 $('body').localize();
@@ -90,6 +92,7 @@ $(function () {
         .resolve();
     router.updatePageLinks();
     console.log(process.env.NODE_ENV);
+    
 });
 
 function open_url_tab(url) {
@@ -99,4 +102,114 @@ function open_url_tab(url) {
     } else { // Browser has blocked it
         alert('Please allow popups for this website');
     }
+}
+
+function initAboutUs() {
+
+    /* Strat vision section */
+    for (let i = 0; i < 7; i++) {
+        if (i === 1) {
+            let ulElem = $("<ul/>");
+            for (let j = 0; j < 5; j++) {
+                let li = $("<li/>");
+                li.append("<i class='fas fa-angle-double-right'></i>&nbsp;<span data-i18n='[html]about_us.vision.contents." + i + "." + j + "'></span>")
+                ulElem.append(li);
+            }
+            $("#visionList").append(ulElem);
+        } else if (i === 5) {
+            let ulElem = $("<ul/>");
+            for (let j = 0; j < 5; j++) {
+                let li = $("<li/>");
+                li.append("<i class='fas fa-angle-double-right'></i>&nbsp;<span data-i18n='[html]about_us.vision.contents." + i + "." + j + "'></span>")
+                ulElem.append(li);
+            }
+            $("#visionList").append(ulElem);
+        } else {
+            $("#visionList").append("<p data-i18n='[html]about_us.vision.contents." + i + "'></p>");
+        }
+    }
+    /* End vision section */
+
+
+    /* Strat team section */
+    for (let i = 0; i < 14; i++) {
+        let outerDiv = $("<div/>")
+                         .addClass("col-lg-2 col-md-6")
+                          .attr({"data-i18n":"[data-content]about_us.teams.list."+i+".content"});
+        let innerDiv1 = $("<div/>").addClass("member");
+        let innerDiv2 = $("<div/>").addClass("pic");
+        let img = $("<img/>")
+            .attr({ "src": "../../assets/team/portrait_" + i + ".jpg" })
+            .css({ "width": "100px", "height": "100px" });
+        innerDiv2.append(img);
+        innerDiv1.append(innerDiv2);
+        innerDiv1.append('<h5 style="font-size:16px" data-i18n="[html]about_us.teams.list.' + i + '.name"></h5>');
+        innerDiv1.append('<span data-i18n="[html]about_us.teams.list.' + i + '.type"></span>');
+        outerDiv.append(innerDiv1);
+        $("#teamList").append(outerDiv);
+    }
+    /* End team section */
+
+    /* Strat contact section */
+    let table = $("<table />").addClass("table table-sm table-bordered");
+    let tbody = $("<tbody />");
+    for (let i = 0; i < 8; i++) {
+        let tr = $("<tr />");
+        /* For First Row */
+        let td1 = $("<td />")
+            .css({ "width": "30%", "height": "40px" })
+            .addClass("text-center align-middle")
+            .attr({ "data-i18n": "[html]about_us.contact.contents." + i + ".key" });
+        tr.append(td1);
+        /* For Second Row */
+        let td2 = $("<td />")
+            .css({ "height": "40px" })
+            .addClass("align-middle")
+            .attr({ "data-i18n": "[html]about_us.contact.contents." + i + ".value" });
+        tr.append(td2);
+
+        tbody.append(tr);
+    }
+    table.append(tbody);
+    $("#contactList").append(table);
+    /* End Contact section */
+
+    /* Strat support section */
+    for (let i = 0; i < 4; i++) {
+        $("#supportContents").append('<span data-i18n="[html]about_us.support.contents.' + i + '"></span><br/>');
+    }
+    /* End support section */
+
+    /* Strat jobs Section */
+    for (let i = 0; i < 12; i++) {
+        if (i === 5) {
+            let ulElem = $("<ul />");
+            for (let j = 0; j < 5; j++) {
+                let li = $("<li />");
+                li.append("<i class='fas fa-angle-double-right'></i>&nbsp;<span data-i18n='[html]about_us.jobs.contents." + i + "." + j + "'></span>")
+                ulElem.append(li);
+            }
+            $("#jobContents").append(ulElem);
+        } else if (i === 8) {
+            let ulElem = $("<ul />");
+            for (let j = 0; j < 11; j++) {
+                let li = $("<li />");
+                li.append("<i class='fas fa-angle-double-right'></i>&nbsp;<span data-i18n='[html]about_us.jobs.contents." + i + "." + j + "'></span>")
+                ulElem.append(li);
+            }
+            $("#jobContents").append(ulElem);
+        } else if (i === 10) {
+            let ulElem = $("<ul />");
+            for (let j = 0; j < 5; j++) {
+                let li = $("<li />");
+                li.append("<i class='fas fa-angle-double-right'></i>&nbsp;<span data-i18n='[html]about_us.jobs.contents." + i + "." + j + "'></span>")
+                ulElem.append(li);
+            }
+            $("#jobContents").append(ulElem);
+        } else {
+            $("#jobContents").append("<p data-i18n='[html]about_us.jobs.contents." + i + "'></p>");
+        }
+    }
+    /* End jobs section */
+
 }
