@@ -32,6 +32,7 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery',
+            magnificPopup:'magnific-popup',
             i18next:'i18next',
             i18nextXHRBackend:'i18next-xhr-backend',
             jqueryI18next:'jquery-i18next'

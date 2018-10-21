@@ -96,7 +96,116 @@
     }
   },
   "solutions": {
-    "headline": "Solutions"
+    "headline": "Solutions",
+    "mainContent": "Wir bieten Unterstützung und/oder fertige Lösungen in diversen Branchen zu den Themen Daten-, Informations- und Wissens-Management.<br/>Die Module der drei Schichten bauen aufeinander auf und können bei Bedarf in das Portalsystem Knowledge Square integriert werden.",
+    "subContents": {
+      "firstRow": {
+        "title": "Knowledge Management",
+        "list": [
+          "Knowledge Collection",
+          "Knowledge Store",
+          "Knowledge Model"
+        ]
+      },
+      "secondRow": {
+        "title": "Information Handling",
+        "list": [
+          "Data Analysis",
+          "Data Processing",
+          "Data Consolidation"
+        ]
+      },
+      "thirdRow": {
+        "title": "Data Processing",
+        "list": [
+          "Data Interfaces",
+          "Data Collection",
+          "Data Mediation"
+        ]
+      }
+    },
+    "daten": {
+      "headline": "Daten",
+      "contents": [
+          "Der sichere Umgang mit Daten ist die Basis für jedes Informationssystem.Unsere Data-Mediation-Module unterstützen...",
+          [
+            "grosse Datenmengen",
+            "sensiblen Daten",
+            "alle gängigen Schnittstellen",
+            "Fehler-toleranten Datentransport",
+            "Transfer- und Verarbeitungs-Monitoring",
+            "Transfer- und Verarbeitungs-History"
+          ],
+          "Wir setzen auf Standards und arbeiten bevorzugt auf Windows- und Unix-Plattformen",
+          "Auch unsere kleinen stand-alone Lösungen sind so ausgelegt, dass sie bei Bedarf in eine Knowledge Square-Plattform eingebunden werden können. Dies erlaubt eine schrittweise und risikoarme Vorgehensweise."
+      ]
+    },
+    "informationen": {
+      "headline": "Informationen",
+      "contents": [
+          "<b>Wie gewinnen wir Informationen?</b>",
+          [
+            "Konsolidierung/Analyse von Daten (Data Mining)",
+            "Eingabe am Bildschirm (Provisioning)",
+            "Synchronisation von anderen Systemen (Replication)",
+            "Suche/Parsing im Intranet/Internet"
+          ],
+          "<b>Wie finden wir Informationen?</b>",
+          [
+            "Navigation in vorgegebenen Rubriken",
+            "Suche nach Text-Bestandteilen oder Stichwörtern",
+            "Rollenbasierte Filter und Zugangsberechtigungen"
+          ],
+          "<b>Wie verteilen wir Informationen?</b>",
+          [
+            "Pull (Empfänger holt die Informationen auf einem Portal)",
+            "Push (Empfänger erhält die Informationen zugeschickt, z.B. als eMail)",
+            "PushPull (Empfänger erhält einen Hinweis zugeschickt, z.B. eine SMS und holt dann ab)"
+          ],
+          "Wenn es um die Bereitstellung von Informationen geht, können wir uns auf unsere Datenverarbeitungs-Module und -Schnittstellen verlassen.",
+          "Was hier dazukommt, sind benutzerfreundliche Navigations- und Suchfunktionen, eine rollenbasierte Zugriffssteuerung und Möglichkeiten zur flexiblen Formatierung der Ausgaben."
+      ]
+    },
+    "wissen": {
+      "headline": "Wissen",
+      "contents": [
+          "<b>Wie erarbeiten wir nutzbares Wissen?</b>",
+          [
+            "Angepasstes Wissensmodell (Fundament/Rahmen)",
+            "Gelenkte Kommunikation (über Knowledge Square)",
+            "Wissensbeiträge von Mitarbeitern (Know-How)",
+            "Externe Wissensbeiträge (Best Practises)",
+            "Interne oder externe Moderation der Inhalte-Pflege",
+            "Training"
+          ],
+          "<b>Wie bewahren wir Wissen?</b>",
+          [
+            "Wissens-Speicher",
+            "kontinuierliche Pflege durch die Beteiligten",
+            "periodische Qualitäts-Reviews"
+          ],
+          "Rein personenbezogenes Wissen ist nur bedingt nutzbar und muss zuerst 'verallgemeinert' werden. Die Metapher des Eisbergs bietet sich an, wo nur ein Teil der Eismasse an der Oberfläche sichtbar ist.",
+          "Genauso verhält es sich mit der Kommunikation, wo es gilt, den geschäftlichen Teil der informellen Kommunikation der Mitarbeiter in nutzbare formelle und elektronisch verwertbare Kanäle zu lenken."
+        ]
+    },
+    "branchen": {
+      "headline": "Branchen-Erfahrung",
+      "contents": [
+          "Die Mitarbeiter der K2 Informatics und die Partnerfirmen bringen langjährige Erfahrung in diversen Branchen mit.",
+          [
+            "Telecom",
+            "R&D in Industrie und Forschung",
+            "Banken",
+            "Tourismus",
+            "Box Offices (Ticketing)",
+            "Mobile-Ticketing",
+            "Internet-Publishing",
+            "eCommerce",
+            "Energietechnik"
+          ],
+          "Das bei K2 Informatics verfügbare Know-How in ihrer Branche legen wir ihnen wir gerne auf Anfrage dar.Wir freuen uns auf ihren "
+        ]
+    }
   },
   "about_us": {
     "headline": "About Us",

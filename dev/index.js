@@ -2,9 +2,7 @@ import 'bootstrap';
 import './styles/main.scss';
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
-import 'magnific-popup';
-import './assets/js/main.js';
-import './assets/js/about_us.js';
+import './js/main.js';
 
 /* For Language */
 window.lang = "en";

@@ -63,3 +63,4 @@ typings/
 # project specific
 dev/node_modules
 public/
+dev/package-lock.json

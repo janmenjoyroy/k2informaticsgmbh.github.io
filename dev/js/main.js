@@ -1,5 +1,5 @@
 
-$(document).ready(function ($) {
+$(function () {
   // i18next for multilingual
   i18next.use(i18nextXHRBackend);
   i18next.init({
@@ -14,20 +14,20 @@ $(document).ready(function ($) {
   });
 
   $(".lang").on("click", function (event) {
-      event.stopPropagation();
-      event.preventDefault();
-      window.lang = $(this).attr("data-lang");
-      i18next.changeLanguage(window.lang);
-      let url = window.location.href;
-      url = url.split("/").pop();
-      console.log("url:", url);
-      router.pause();
-      router.navigate(`/${lang}/${url}`);
-      router.resume();
+    event.stopPropagation();
+    event.preventDefault();
+    window.lang = $(this).attr("data-lang");
+    i18next.changeLanguage(window.lang);
+    let url = window.location.href;
+    url = url.split("/").pop();
+    console.log("url:", url);
+    router.pause();
+    router.navigate(`/${lang}/${url}`);
+    router.resume();
   });
   i18next.on('languageChanged', () => {
-      jqueryI18next.init(i18next, $);
-      $('body').localize();
+    jqueryI18next.init(i18next, $);
+    $('body').localize();
   });
 
   // change navigate router
@@ -111,9 +111,5 @@ $(document).ready(function ($) {
   } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
     $("#mobile-nav, #mobile-nav-toggle").hide();
   }
-
-
-
-
 
 });
