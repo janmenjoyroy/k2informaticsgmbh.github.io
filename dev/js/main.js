@@ -1,4 +1,3 @@
-
 $(function () {
   // i18next for multilingual
   i18next.use(i18nextXHRBackend);
@@ -47,8 +46,6 @@ $(function () {
     window.scrollTo(0, 0);
   });
 
-
-
   $("#main").on("click", ".description a", function (event) {
     event.stopPropagation();
     event.preventDefault();
@@ -56,9 +53,6 @@ $(function () {
     window.router.navigate(`/${window.lang}/${page}`);
     window.scrollTo(0, 0);
   });
-
-
-
 
   // Mobile Navigation
   if ($('#nav-menu-container').length) {
