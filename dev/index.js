@@ -157,13 +157,8 @@ function initAboutUs() {
     let innerDiv1 = $("<div/>").addClass("member");
     let innerDiv2 = $("<div/>").addClass("pic");
     let img = $("<img/>")
-      .attr({
-        src: "../../assets/team/portrait_" + i + ".jpg"
-      })
-      .css({
-        width: "100px",
-        height: "100px"
-      });
+      .attr({src: "../../assets/team/portrait_" + i + ".jpg"})
+      .css({width: "100px", height: "100px"});
     innerDiv2.append(img);
     innerDiv1.append(innerDiv2);
     innerDiv1.append(
@@ -186,10 +181,7 @@ function initAboutUs() {
     let tr = $("<tr />");
     /* For First Row */
     let td1 = $("<td />")
-      .css({
-        width: "30%",
-        height: "40px"
-      })
+      .css({width: "30%", height: "40px"})
       .addClass("text-center align-middle")
       .attr({
         "data-i18n": "[html]about_us.contact.contents." + i + ".key"
@@ -197,9 +189,7 @@ function initAboutUs() {
     tr.append(td1);
     /* For Second Row */
     let td2 = $("<td />")
-      .css({
-        height: "40px"
-      })
+      .css({height: "40px"})
       .addClass("align-middle")
       .attr({
         "data-i18n": "[html]about_us.contact.contents." + i + ".value"

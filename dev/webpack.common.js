@@ -43,15 +43,12 @@ module.exports = {
             favicon:'./assets/images/logo.png',
             inject:'head'
         }),
-        // new favicon('./assets/images/logo.png')
     ],
     module: {
         rules: [
             {
                 test: /\.(scss|css)$/,
                 use: ['style-loader', 'css-loader','sass-loader']
-                //test: /\.(scss)$/,
-                // use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
             },
             {
                 test: /\.html$/, loader: 'html-loader',
