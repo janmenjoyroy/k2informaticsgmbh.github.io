@@ -1,7 +1,12 @@
 import "bootstrap";
 import "./styles/main.scss";
-import { library, dom } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+import {
+  library,
+  dom
+} from "@fortawesome/fontawesome-svg-core";
+import {
+  fas
+} from "@fortawesome/free-solid-svg-icons";
 import "./js/main.js";
 
 /* For Language */
@@ -29,18 +34,38 @@ var htmlFrags = {
 };
 
 function loadHeader() {
-  let headerElem = '<meta charset="utf-8">';
-  headerElem = `${headerElem} <meta content="width=device-width, initial-scale=1.0" name="viewport">`;
-  headerElem = `${headerElem} <meta content="" name="keywords">`;
-  headerElem = `${headerElem} <meta content="" name="description">`;
+  let headerElem = [];
+  headerElem.push(
+    $("<meta/>").attr({
+      "charset": "utf-8"
+    })
+  );
+  headerElem.push(
+    $("<meta/>").attr({
+      "content": "width=device-width, initial-scale=1.0",
+      "name": "viewport"
+    })
+  );
+  headerElem.push(
+    $("<meta/>").attr({
+      "content": "",
+      "name": "keywords"
+    })
+  );
+  headerElem.push(
+    $("<meta/>").attr({
+      "content": "",
+      "name": "description"
+    })
+  );
   return headerElem;
 }
 
-$(function() {
+$(function () {
   $(document.head).append(loadHeader());
   router
     .on({
-      "/": function() {
+      "/": function () {
         console.log("Home");
         $("#main")
           .empty()
@@ -49,7 +74,7 @@ $(function() {
         jqueryI18next.init(i18next, $);
         $("body").localize();
       },
-      "/:lang?/home": function(prams) {
+      "/:lang?/home": function (prams) {
         console.log(prams);
         window.lang = prams.lang;
         console.log("Home");
@@ -60,7 +85,7 @@ $(function() {
         jqueryI18next.init(i18next, $);
         $("body").localize();
       },
-      "/:lang?/services": function(prams) {
+      "/:lang?/services": function (prams) {
         window.lang = prams.lang;
         console.log("Services");
         $("#main")
@@ -70,7 +95,7 @@ $(function() {
         jqueryI18next.init(i18next, $);
         $("body").localize();
       },
-      "/:lang?/solutions": function(prams) {
+      "/:lang?/solutions": function (prams) {
         window.lang = prams.lang;
         console.log("Solutions");
         $("#main")
@@ -80,7 +105,7 @@ $(function() {
         jqueryI18next.init(i18next, $);
         $("body").localize();
       },
-      "/:lang?/about_us": function(prams) {
+      "/:lang?/about_us": function (prams) {
         window.lang = prams.lang;
         console.log("Companies");
         $("#main")
@@ -115,13 +140,13 @@ function initAboutUs() {
       let ulElem = $("<ul/>");
       for (let j = 0; j < 5; j++) {
         let li = $("<li/>");
-        li.append(
-          "<i class='fas fa-angle-double-right'></i>&nbsp;<span data-i18n='[html]about_us.vision.contents." +
-            i +
-            "." +
-            j +
-            "'></span>"
-        );
+        let icon = $("<i/>").addClass("fas fa-angle-double-right");
+        let span = $("<span/>").attr({
+          "data-i18n": `[html]about_us.vision.contents.${i}.${j}`
+        });
+        li.append(icon);
+        li.append("&nbsp;");
+        li.append(span);
         ulElem.append(li);
       }
       $("#visionList").append(ulElem);
@@ -129,13 +154,13 @@ function initAboutUs() {
       let ulElem = $("<ul/>");
       for (let j = 0; j < 5; j++) {
         let li = $("<li/>");
-        li.append(
-          "<i class='fas fa-angle-double-right'></i>&nbsp;<span data-i18n='[html]about_us.vision.contents." +
-            i +
-            "." +
-            j +
-            "'></span>"
-        );
+        let icon = $("<i/>").addClass("fas fa-angle-double-right");
+        let span = $("<span/>").attr({
+          "data-i18n": `[html]about_us.vision.contents.${i}.${j}`
+        });
+        li.append(icon);
+        li.append("&nbsp;");
+        li.append(span);
         ulElem.append(li);
       }
       $("#visionList").append(ulElem);
@@ -157,14 +182,16 @@ function initAboutUs() {
     let innerDiv1 = $("<div/>").addClass("member");
     let innerDiv2 = $("<div/>").addClass("pic");
     let img = $("<img/>")
-      .attr({src: "../../assets/team/portrait_" + i + ".jpg"})
+      .attr({
+        src: "../../assets/team/portrait_" + i + ".jpg"
+      })
       .css({width: "100px", height: "100px"});
     innerDiv2.append(img);
     innerDiv1.append(innerDiv2);
     innerDiv1.append(
       '<h5 style="font-size:16px" data-i18n="[html]about_us.teams.list.' +
-        i +
-        '.name"></h5>'
+      i +
+      '.name"></h5>'
     );
     innerDiv1.append(
       '<span data-i18n="[html]about_us.teams.list.' + i + '.type"></span>'
@@ -218,10 +245,10 @@ function initAboutUs() {
         let li = $("<li />");
         li.append(
           "<i class='fas fa-angle-double-right'></i>&nbsp;<span data-i18n='[html]about_us.jobs.contents." +
-            i +
-            "." +
-            j +
-            "'></span>"
+          i +
+          "." +
+          j +
+          "'></span>"
         );
         ulElem.append(li);
       }
@@ -232,10 +259,10 @@ function initAboutUs() {
         let li = $("<li />");
         li.append(
           "<i class='fas fa-angle-double-right'></i>&nbsp;<span data-i18n='[html]about_us.jobs.contents." +
-            i +
-            "." +
-            j +
-            "'></span>"
+          i +
+          "." +
+          j +
+          "'></span>"
         );
         ulElem.append(li);
       }
@@ -246,10 +273,10 @@ function initAboutUs() {
         let li = $("<li />");
         li.append(
           "<i class='fas fa-angle-double-right'></i>&nbsp;<span data-i18n='[html]about_us.jobs.contents." +
-            i +
-            "." +
-            j +
-            "'></span>"
+          i +
+          "." +
+          j +
+          "'></span>"
         );
         ulElem.append(li);
       }
