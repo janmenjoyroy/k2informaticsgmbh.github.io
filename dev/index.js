@@ -48,13 +48,11 @@ function loadHeader() {
   );
   headerElem.push(
     $("<meta/>").attr({
-      "content": "",
       "name": "keywords"
     })
   );
   headerElem.push(
     $("<meta/>").attr({
-      "content": "",
       "name": "description"
     })
   );
@@ -67,12 +65,7 @@ $(function () {
     .on({
       "/": function () {
         console.log("Home");
-        $("#main")
-          .empty()
-          .append(htmlFrags.index);
-        i18next.changeLanguage(window.lang);
-        jqueryI18next.init(i18next, $);
-        $("body").localize();
+        router.navigate('/en/home');
       },
       "/:lang?/home": function (prams) {
         console.log(prams);
@@ -166,7 +159,9 @@ function initAboutUs() {
       $("#visionList").append(ulElem);
     } else {
       $("#visionList").append(
-        "<p data-i18n='[html]about_us.vision.contents." + i + "'></p>"
+        $("<p/>").attr({
+          "data-i18n": "[html]about_us.vision.contents." + i
+        })
       );
     }
   }
@@ -174,6 +169,7 @@ function initAboutUs() {
 
   /* Strat team section */
   for (let i = 0; i < 14; i++) {
+
     let outerDiv = $("<div/>")
       .addClass("col-lg-2 col-md-6")
       .attr({
@@ -185,16 +181,23 @@ function initAboutUs() {
       .attr({
         src: "../../assets/team/portrait_" + i + ".jpg"
       })
-      .css({width: "100px", height: "100px"});
+      .css({
+        width: "100px",
+        height: "100px"
+      });
     innerDiv2.append(img);
     innerDiv1.append(innerDiv2);
     innerDiv1.append(
-      '<h5 style="font-size:16px" data-i18n="[html]about_us.teams.list.' +
-      i +
-      '.name"></h5>'
+      $("<h5/>").attr({
+        "data-i18n": `[html]about_us.teams.list.${i}.name`,
+        "class": "btext"
+      })
     );
     innerDiv1.append(
-      '<span data-i18n="[html]about_us.teams.list.' + i + '.type"></span>'
+      $("<span/>").attr({
+        "data-i18n": `[html]about_us.teams.list.${i}.type`,
+        "class": "btext"
+      })
     );
     outerDiv.append(innerDiv1);
     $("#teamList").append(outerDiv);
@@ -208,7 +211,10 @@ function initAboutUs() {
     let tr = $("<tr />");
     /* For First Row */
     let td1 = $("<td />")
-      .css({width: "30%", height: "40px"})
+      .css({
+        width: "30%",
+        height: "40px"
+      })
       .addClass("text-center align-middle")
       .attr({
         "data-i18n": "[html]about_us.contact.contents." + i + ".key"
@@ -216,8 +222,10 @@ function initAboutUs() {
     tr.append(td1);
     /* For Second Row */
     let td2 = $("<td />")
-      .css({height: "40px"})
-      .addClass("align-middle")
+      .css({
+        height: "40px"
+      })
+      .addClass("align-middle bheight")
       .attr({
         "data-i18n": "[html]about_us.contact.contents." + i + ".value"
       });
@@ -229,11 +237,16 @@ function initAboutUs() {
   $("#contactList").append(table);
   /* End Contact section */
 
+
+
   /* Strat support section */
   for (let i = 0; i < 4; i++) {
     $("#supportContents").append(
-      '<span data-i18n="[html]about_us.support.contents.' + i + '"></span><br/>'
-    );
+        $("<span/>").attr({
+          "data-i18n": "[html]about_us.support.contents." + i
+        })
+      )
+      .append("<br/>");
   }
   /* End support section */
 
@@ -244,12 +257,16 @@ function initAboutUs() {
       for (let j = 0; j < 5; j++) {
         let li = $("<li />");
         li.append(
-          "<i class='fas fa-angle-double-right'></i>&nbsp;<span data-i18n='[html]about_us.jobs.contents." +
-          i +
-          "." +
-          j +
-          "'></span>"
-        );
+            $("<i/>").attr({
+              "class": "fas fa-angle-double-right"
+            })
+          )
+          .append("&nbsp;")
+          .append(
+            $("<span/>").attr({
+              "data-i18n": "[html]about_us.jobs.contents." + i + "." + j
+            })
+          );
         ulElem.append(li);
       }
       $("#jobContents").append(ulElem);
@@ -258,12 +275,16 @@ function initAboutUs() {
       for (let j = 0; j < 11; j++) {
         let li = $("<li />");
         li.append(
-          "<i class='fas fa-angle-double-right'></i>&nbsp;<span data-i18n='[html]about_us.jobs.contents." +
-          i +
-          "." +
-          j +
-          "'></span>"
-        );
+            $("<i/>").attr({
+              "class": "fas fa-angle-double-right"
+            })
+          )
+          .append("&nbsp;")
+          .append(
+            $("<span/>").attr({
+              "data-i18n": "[html]about_us.jobs.contents." + i + "." + j
+            })
+          );
         ulElem.append(li);
       }
       $("#jobContents").append(ulElem);
@@ -272,18 +293,24 @@ function initAboutUs() {
       for (let j = 0; j < 5; j++) {
         let li = $("<li />");
         li.append(
-          "<i class='fas fa-angle-double-right'></i>&nbsp;<span data-i18n='[html]about_us.jobs.contents." +
-          i +
-          "." +
-          j +
-          "'></span>"
-        );
+            $("<i/>").attr({
+              "class": "fas fa-angle-double-right"
+            })
+          )
+          .append("&nbsp;")
+          .append(
+            $("<span/>").attr({
+              "data-i18n": "[html]about_us.jobs.contents." + i + "." + j
+            })
+          );
         ulElem.append(li);
       }
       $("#jobContents").append(ulElem);
     } else {
       $("#jobContents").append(
-        "<p data-i18n='[html]about_us.jobs.contents." + i + "'></p>"
+        $("<p/>").attr({
+          "data-i18n": "[html]about_us.jobs.contents." + i
+        })
       );
     }
   }

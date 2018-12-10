@@ -125,86 +125,100 @@
       }
     },
     "daten": {
-      "headline": "Daten",
+      "headline": "Daten verarbeiten",
       "contents": [
-          "Der sichere Umgang mit Daten ist die Basis für jedes Informationssystem.Unsere Data-Mediation-Module unterstützen...",
-          [
-            "grosse Datenmengen",
-            "sensiblen Daten",
-            "alle gängigen Schnittstellen",
-            "Fehler-toleranten Datentransport",
-            "Transfer- und Verarbeitungs-Monitoring",
-            "Transfer- und Verarbeitungs-History"
-          ],
-          "Wir setzen auf Standards und arbeiten bevorzugt auf Windows- und Unix-Plattformen",
-          "Auch unsere kleinen stand-alone Lösungen sind so ausgelegt, dass sie bei Bedarf in eine Knowledge Square-Plattform eingebunden werden können. Dies erlaubt eine schrittweise und risikoarme Vorgehensweise."
+        "Auch unsere kleinen stand-alone Lösungen sind so ausgelegt, dass sie bei Bedarf in eine Knowledge Square - Plattform eingebunden werden können. Dies erlaubt eine schrittweise und risikoarme Vorgehensweise.",
+        "Der sichere Umgang mit Daten ist die Basis für jedes Informationssystem.Unsere Data-Mediation-Module unterstützen...",
+        [
+          "grosse Datenmengen",
+          "sensiblen Daten",
+          "alle gängigen Schnittstellen",
+          "Fehler-toleranten Datentransport",
+          "Transfer- und Verarbeitungs-Monitoring",
+          "Transfer- und Verarbeitungs-History"
+        ],
+        "Wir setzen auf Standards und arbeiten bevorzugt auf Windows- und Unix-Plattformen",
+        "Auch unsere kleinen stand-alone Lösungen sind so ausgelegt, dass sie bei Bedarf in eine Knowledge Square-Plattform eingebunden werden können. Dies erlaubt eine schrittweise und risikoarme Vorgehensweise."
       ]
     },
     "informationen": {
       "headline": "Informationen",
+      "desc": [
+        "Wenn es um die Bereitstellung von Informationen geht, können wir uns auf unsere Datenverarbeitungs-Module und -Schnittstellen verlassen.",
+        "Was hier dazukommt, sind benutzerfreundliche Navigations- und Suchfunktionen, eine rollenbasierte Zugriffssteuerung und Möglichkeiten zur flexiblen Formatierung der Ausgaben."
+      ],
       "contents": [
-          "<b>Wie gewinnen wir Informationen?</b>",
-          [
-            "Konsolidierung/Analyse von Daten (Data Mining)",
-            "Eingabe am Bildschirm (Provisioning)",
-            "Synchronisation von anderen Systemen (Replication)",
-            "Suche/Parsing im Intranet/Internet"
-          ],
-          "<b>Wie finden wir Informationen?</b>",
-          [
-            "Navigation in vorgegebenen Rubriken",
-            "Suche nach Text-Bestandteilen oder Stichwörtern",
-            "Rollenbasierte Filter und Zugangsberechtigungen"
-          ],
-          "<b>Wie verteilen wir Informationen?</b>",
-          [
-            "Pull (Empfänger holt die Informationen auf einem Portal)",
-            "Push (Empfänger erhält die Informationen zugeschickt, z.B. als eMail)",
-            "PushPull (Empfänger erhält einen Hinweis zugeschickt, z.B. eine SMS und holt dann ab)"
-          ],
-          "Wenn es um die Bereitstellung von Informationen geht, können wir uns auf unsere Datenverarbeitungs-Module und -Schnittstellen verlassen.",
-          "Was hier dazukommt, sind benutzerfreundliche Navigations- und Suchfunktionen, eine rollenbasierte Zugriffssteuerung und Möglichkeiten zur flexiblen Formatierung der Ausgaben."
+        "<b>Wie gewinnen wir Informationen?</b>",
+        [
+          "Konsolidierung/Analyse von Daten (Data Mining)",
+          "Eingabe am Bildschirm (Provisioning)",
+          "Synchronisation von anderen Systemen (Replication)",
+          "Suche/Parsing im Intranet/Internet"
+        ],
+        "<b>Wie finden wir Informationen?</b>",
+        [
+          "Navigation in vorgegebenen Rubriken",
+          "Suche nach Text-Bestandteilen oder Stichwörtern",
+          "Rollenbasierte Filter und Zugangsberechtigungen"
+        ],
+        "<b>Wie verteilen wir Informationen?</b>",
+        [
+          "Pull (Empfänger holt die Informationen auf einem Portal)",
+          "Push (Empfänger erhält die Informationen zugeschickt, z.B. als eMail)",
+          "PushPull (Empfänger erhält einen Hinweis zugeschickt, z.B. eine SMS und holt dann ab)"
+        ],
+        "Wenn es um die Bereitstellung von Informationen geht, können wir uns auf unsere Datenverarbeitungs-Module und -Schnittstellen verlassen.",
+        "Was hier dazukommt, sind benutzerfreundliche Navigations- und Suchfunktionen, eine rollenbasierte Zugriffssteuerung und Möglichkeiten zur flexiblen Formatierung der Ausgaben."
       ]
     },
     "wissen": {
       "headline": "Wissen",
       "contents": [
-          "<b>Wie erarbeiten wir nutzbares Wissen?</b>",
-          [
-            "Angepasstes Wissensmodell (Fundament/Rahmen)",
-            "Gelenkte Kommunikation (über Knowledge Square)",
-            "Wissensbeiträge von Mitarbeitern (Know-How)",
-            "Externe Wissensbeiträge (Best Practises)",
-            "Interne oder externe Moderation der Inhalte-Pflege",
-            "Training"
-          ],
-          "<b>Wie bewahren wir Wissen?</b>",
-          [
-            "Wissens-Speicher",
-            "kontinuierliche Pflege durch die Beteiligten",
-            "periodische Qualitäts-Reviews"
-          ],
-          "Rein personenbezogenes Wissen ist nur bedingt nutzbar und muss zuerst 'verallgemeinert' werden. Die Metapher des Eisbergs bietet sich an, wo nur ein Teil der Eismasse an der Oberfläche sichtbar ist.",
-          "Genauso verhält es sich mit der Kommunikation, wo es gilt, den geschäftlichen Teil der informellen Kommunikation der Mitarbeiter in nutzbare formelle und elektronisch verwertbare Kanäle zu lenken."
-        ]
+        "Rein personenbezogenes Wissen ist nur bedingt nutzbar und muss zuerst 'verallgemeinert' werden. Die Metapher des Eisbergs bietet sich an, wo nur ein Teil der Eismasse an der Oberfläche sichtbar ist. Genauso verhält es sich mit der Kommunikation, wo es gilt, den geschäftlichen Teil der informellen Kommunikation der Mitarbeiter in nutzbare formelle und elektronisch verwertbare Kanäle zu lenken.",
+        "<b>Wie erarbeiten wir nutzbares Wissen?</b>",
+        [
+          "Angepasstes Wissensmodell (Fundament/Rahmen)",
+          "Gelenkte Kommunikation (über Knowledge Square)",
+          "Wissensbeiträge von Mitarbeitern (Know-How)",
+          "Externe Wissensbeiträge (Best Practises)",
+          "Interne oder externe Moderation der Inhalte-Pflege",
+          "Training"
+        ],
+        "<b>Wie bewahren wir Wissen?</b>",
+        [
+          "Wissens-Speicher",
+          "kontinuierliche Pflege durch die Beteiligten",
+          "periodische Qualitäts-Reviews"
+        ],
+        "Rein personenbezogenes Wissen ist nur bedingt nutzbar und muss zuerst 'verallgemeinert' werden. Die Metapher des Eisbergs bietet sich an, wo nur ein Teil der Eismasse an der Oberfläche sichtbar ist.",
+        "Genauso verhält es sich mit der Kommunikation, wo es gilt, den geschäftlichen Teil der informellen Kommunikation der Mitarbeiter in nutzbare formelle und elektronisch verwertbare Kanäle zu lenken."
+      ]
     },
     "branchen": {
       "headline": "Branchen-Erfahrung",
       "contents": [
-          "Die Mitarbeiter der K2 Informatics und die Partnerfirmen bringen langjährige Erfahrung in diversen Branchen mit.",
-          [
-            "Telecom",
-            "R&D in Industrie und Forschung",
-            "Banken",
-            "Tourismus",
-            "Box Offices (Ticketing)",
-            "Mobile-Ticketing",
-            "Internet-Publishing",
-            "eCommerce",
-            "Energietechnik"
-          ],
-          "Das bei K2 Informatics verfügbare Know-How in ihrer Branche legen wir ihnen wir gerne auf Anfrage dar.Wir freuen uns auf ihren "
-        ]
+        "Das bei K2 Informatics verfügbare Know-How in ihrer Branche legen wir ihnen wir gerne auf Anfrage dar. Wir freuen uns auf ihren Anruf.",
+        "<b>Die Mitarbeiter der K2 Informatics und die Partnerfirmen bringen langjährige Erfahrung in diversen Branchen mit.</b>",
+        [
+          "Telecom",
+          "R&D in Industrie und Forschung",
+          "Banken",
+          "Tourismus",
+          "Box Offices (Ticketing)",
+          "Mobile-Ticketing",
+          "Internet-Publishing",
+          "eCommerce",
+          "Energietechnik"
+        ],
+        "Das bei K2 Informatics verfügbare Know-How in ihrer Branche legen wir ihnen wir gerne auf Anfrage dar.Wir freuen uns auf ihren "
+      ]
+    },
+    "knowledge": {
+      "headline": "Knowledge Squares",
+      "contents": [
+        "personenbezogenes (flüchtiges) Know-How in kollektives Know-How verwandeln informelle Kommunikation durch formelle (wo notwendig) ersetzten die Anwendung von Standards und Werkzeugen verbessern Kommunikations- und Wissensdefizite sichtbar machen",
+        "Wissens-Drehscheiben (Knowledge Squares) basieren auf modernen Web-Techniken und werden intern (von Ihren Mitarbeitern) oder extern (von uns oder Ihrem Berater) gepflegt und moderiert.Sie bauen auf den bestehenden Informatiklösungen auf und präsentieren die in diesen Systemen geführten Daten in einem übergeordneten Kontext.Knowledge Squares bilden aber auch die betrieblichen Informatik-Komponenten ab und erlauben es so, Wissen über diese aufzunehmen, in einen Zusammenhang zu den betrieblichen Abläufen zu stellen und in einheitlicher Form zu präsentieren.Knowledge Squares werden an die individuellen Bedürfnisse des Unternehmens und der Mitarbeitergruppen (Rollen) angepasst."
+      ]
     }
   },
   "about_us": {
@@ -254,8 +268,7 @@
     },
     "teams": {
       "headline": "Team/Partner",
-      "list": [
-        {
+      "list": [{
           "image": "portrait_0.jpg",
           "name": "Stefan Ochsenbein",
           "type": "Portrait",
@@ -349,8 +362,7 @@
     },
     "contact": {
       "headline": "Contact",
-      "contents": [
-        {
+      "contents": [{
           "key": "<b>Your contact:</b>",
           "value": "Stefan Ochsenbein(Managing Director)"
         },
