@@ -65,7 +65,7 @@ $(function () {
     .on({
       "/": function () {
         console.log("Home");
-        router.navigate('/en/home');
+        router.navigate(`/${window.lang}/home`);
       },
       "/:lang?/home": function (prams) {
         console.log(prams);
