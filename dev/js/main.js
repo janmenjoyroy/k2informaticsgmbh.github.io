@@ -12,7 +12,7 @@ $(function () {
     $('body').localize();
   });
 
-  $(".lang").on("click", function (event) {
+  $(document).on("click", ".lang", function (event) {
     event.stopPropagation();
     event.preventDefault();
     window.lang = $(this).attr("data-lang");
@@ -30,7 +30,7 @@ $(function () {
   });
 
   // change navigate router
-  $(".nav-menu li a").on("click", function (event) {
+  $(document).on("click", "#nav-menu-container li a", function (event) {
     event.stopPropagation();
     event.preventDefault();
     let page = $(this).attr("data-page");
@@ -38,7 +38,16 @@ $(function () {
     window.scrollTo(0, 0);
   });
 
-  $(".footer-links a").on("click", function (event) {
+  $(document).on("click", "#mobile-nav li a", function (event) {
+    event.stopPropagation();
+    event.preventDefault();
+    let page = $(this).attr("data-page");
+    window.router.navigate(`/${window.lang}/${page}`);
+    window.scrollTo(0, 0);
+    $("#mobile-nav-toggle").trigger("click");
+  });
+
+  $(document).on("click", ".footer-links a", function (event) {
     event.stopPropagation();
     event.preventDefault();
     let page = $(this).attr("data-page");
