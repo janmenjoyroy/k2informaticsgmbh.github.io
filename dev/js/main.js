@@ -29,38 +29,35 @@ $(function () {
     $('body').localize();
   });
 
+  function loadPage(page) {
+    window.router.navigate(`/${window.lang}/${page}`);
+    window.scrollTo(0, 0);
+  }
+
   // change navigate router
   $(document).on("click", "#nav-menu-container li a", function (event) {
     event.stopPropagation();
     event.preventDefault();
-    let page = $(this).attr("data-page");
-    window.router.navigate(`/${window.lang}/${page}`);
-    window.scrollTo(0, 0);
+    loadPage($(this).attr("data-page"));
   });
 
   $(document).on("click", "#mobile-nav li a", function (event) {
     event.stopPropagation();
     event.preventDefault();
-    let page = $(this).attr("data-page");
-    window.router.navigate(`/${window.lang}/${page}`);
-    window.scrollTo(0, 0);
+    loadPage($(this).attr("data-page"));
     $("#mobile-nav-toggle").trigger("click");
   });
 
   $(document).on("click", ".footer-links a", function (event) {
     event.stopPropagation();
     event.preventDefault();
-    let page = $(this).attr("data-page");
-    window.router.navigate(`/${window.lang}/${page}`);
-    window.scrollTo(0, 0);
+    loadPage($(this).attr("data-page"));
   });
 
   $("#main").on("click", ".description a", function (event) {
     event.stopPropagation();
     event.preventDefault();
-    let page = $(this).attr("data-page");
-    window.router.navigate(`/${window.lang}/${page}`);
-    window.scrollTo(0, 0);
+    loadPage($(this).attr("data-page"));
   });
 
   // Mobile Navigation
