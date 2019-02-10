@@ -9,6 +9,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./js/main.js";
 
+/* For import all images  */
+function importAll(r) {
+  return r.keys().map(r);
+}
+importAll(require.context('./assets/images/', false, /\.(png|jpe?g|svg)$/));
+
 /* For Language */
 window.lang = "en";
 
@@ -179,7 +185,7 @@ function initAboutUs() {
     let innerDiv2 = $("<div/>").addClass("pic");
     let img = $("<img/>")
       .attr({
-        src: "../../assets/team/portrait_" + i + ".jpg"
+        "data-i18n": "[src]about_us.teams.list." + i + ".image"
       })
       .css({
         width: "100px",

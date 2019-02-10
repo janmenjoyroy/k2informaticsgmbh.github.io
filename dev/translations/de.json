@@ -270,91 +270,91 @@
     "teams": {
       "headline": "Team/Partner",
       "list": [{
-          "image": "portrait_0.jpg",
+          "image": "assets/images/stefan_portrait.jpg",
           "name": "Stefan Ochsenbein",
           "type": "Portrait",
           "content": "<b>Portrait</b> <br/> Stefan Ochsenbein <br/> Dr. sc. nat.; Dipl. Physiker ETH; <br/> eMail: <a href='mailto:ochsenbein@bluewin.ch'>ochsenbein@bluewin.ch</a> <br/> Physikstudium an der ETH Zürich <br/>Dissertation am Paul Scherrer Institut in Villigen / ETH Zürich,<br/>Gründungsmitglied und VR mls Laser Systems Schweiz AG in Cham<br/>Entwicklungsleiter Verbrennungstechnik Satronic AG, Dielsdorf<br/>Informatik-Entwicklungsleiter ARCO-Data AG, Zug<br/>Gründer und Geschäftsführer K2 Informatics GmbH, Root D4<br/><br/>Um mehr über unsere Mitarbeiter und Partner zu erfahren, clicken Sie bitte auf die untenstehenden Vorschaubilder"
         },
         {
-          "image": "portrait_1.jpg",
+          "image": "assets/images/bkikram_portrait.jpg",
           "name": "Bikram Chatterjee",
           "type": "Portrait",
           "content": "<b>Portrait</b><br/>Bikram Chatterjee<br/>B. Tech in Computer Science and Engineering<br/>eMail: <a href='mailto:bikram.chatterjee@k2informatics.ch'>bikram.chatterjee@k2informatics.ch</a><br/>Bachelor of Technology in Computer Science from Kalyani University, Kolkata, India<br/>Telecom Projects, Embedded Computing, Mobile Applications<br/>Software-Development and Projekt-Management, K2 Informatics GmbH, Root Längenbold"
         },
         {
-          "image": "portrait_2.jpg",
+          "image": "assets/images/agustin_portrait.jpg",
           "name": "Agustin Cautin",
           "type": "Portrait",
           "content": "Licenciado en Ciencias de la Ingeniería Informática UTFSM, Valparaíso, Chile <br/> Enthusiast about a wide range of areas in computer science, from backend development to 3d game engines <br/> Software-Development and Projekt-Management, K2 Informatics GmbH, Root Längenbold"
         },
         {
-          "image": "portrait_3.jpg",
+          "image": "assets/images/franz_portrait.jpg",
           "name": "Franz Philippe Wyss",
           "type": "Portrait",
           "content": "<b>Portrait</b><br/>Franz Philippe Wyss<br/>Dr. sc. nat.; Dipl. Natw. ETH;<br/>eMail: <a href='mailto:info@lernpark.ch'>info@lernpark.ch</a><br/>Studium der Naturwissenschaften an der ETH Zürich<br/>Verhaltensbiologie, Wahrnehmung, Physiologie und experimenteller Psychologie<br/>Dissertation in Zellbiologie an der ETH Zürich<br/>Erfahrung und Führungsfunktion in Unternehmens- & Konzernentwicklung, Umwelt- und Projektmanagement<br/>Gründer und Geschäftsführer <a href=''>lernpark.ch</a>, Zofingen<br/>Weiterbildungen in Controlling, Didaktik, Kommunikation, Marketing, Moderation, Pädagogik, Systemischer Organisationsberatung, Total Quality Management, Mediation, Transaktionsanalyse, Systemischer Organisationsberatung,Total Quality Management, Mediation, Transaktionsanalyse,TZI."
         },
         {
-          "image": "portrait_4.jpg",
+          "image": "assets/images/erlio_portrait.jpg",
           "name": "Erlio GmbH",
           "type": "",
           "content": "<b>Erlio GmbH</b><br/>Laufenstrasse 9 CH-4053 Basel <a href='mailto:info@erl.io'>info@erl.io</a><br/><a href='http://www.erl.io'>http://www.erl.io</a><br/>Unser Partner mit speziellen Kompetenzen in folgenden Bereichen:<br/>Erlang, Consulting, Development, Software Engineering<br/>Web-Kommunikation"
         },
         {
-          "image": "portrait_5.jpg",
+          "image": "assets/images/manfred_portrait.jpg",
           "name": "Manfred Jehle",
           "type": "Portrait",
           "content": "<b>Portrait</b><br/>Manfred Jehle<br/>eMail: <a href='mailto:info@cetris.ch'>info@cetris.ch</a>Lehrlings-Ausbildner bei Landis&Gyr, Zug<br/>Chefexperte Informatik im Auftrag von Amt für Berufsbildung, Zug<br/>Software-Entwicklung bei ARCO-Data AG, Zug<br/>Gründer und Geschäftsführer CeTris GmbH, Zug"
         },
         {
-          "image": "portrait_6.jpg",
+          "image": "assets/images/susanne_portrait.jpg",
           "name": "Susanne Müller",
           "type": "Portrait",
           "content": ""
         },
         {
-          "image": "portrait_7.jpg",
+          "image": "assets/images/erna_portrait.jpg",
           "name": "Erna Villiger",
           "type": "Portrait",
           "content": ""
         },
         {
-          "image": "portrait_8.jpg",
+          "image": "assets/images/guido_portrait.jpg",
           "name": "Guido Hollenstein",
           "type": "Portrait",
           "content": ""
         },
         {
-          "image": "portrait_9.jpg",
+          "image": "assets/images/edouard_portrait.jpg",
           "name": "Edouard Laederach",
           "type": "Portrait",
           "content": ""
         },
         {
-          "image": "portrait_10.jpg",
+          "image": "assets/images/bruno_portrait.jpg",
           "name": "Bruno Schuler",
           "type": "Portrait",
           "content": ""
         },
         {
-          "image": "portrait_11.jpg",
+          "image": "assets/images/lernpark_portrait.jpg",
           "name": "lernpark.ch",
           "type": "",
           "content": ""
         },
         {
-          "image": "portrait_12.jpg",
+          "image": "assets/images/ceTris_portrait.jpg",
           "name": "CeTris GmbH",
           "type": "",
           "content": ""
         },
         {
-          "image": "portrait_13.jpg",
+          "image": "assets/images/holimatic_portrait.jpg",
           "name": "Holimatic GmbH",
           "type": "",
           "content": ""
         },
         {
-          "image": "portrait_14.jpg",
+          "image": "assets/images/laederach_portrait.jpg",
           "name": "Laederach&Schuler",
           "type": "Portrait",
           "content": ""
